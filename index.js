@@ -4,7 +4,8 @@ const { open } = require("sqlite");
 const path = require("path");
 const cors = require("cors");
 
-const port = process.env.PORT || 3001; 
+const port =  3001;
+const app = express();
 app.use(cors());
 const dbPath = path.join(__dirname, "salesDatabase.db");
 let db;
